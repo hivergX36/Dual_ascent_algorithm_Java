@@ -1,9 +1,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        String word = "Helloworld";
-        int hashed = word.hashCode();
-        System.out.println("The hash code for the word \"" + word + "\" is: " + hashed);
+        Dual_ascent da = new Dual_ascent("TestDualAscent", 3);
+        da.readData("data.txt");
+        da.display_equations();
     }
 
 }
