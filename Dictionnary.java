@@ -2,12 +2,14 @@ import java.util.ArrayList;
 
 public class Dictionnary {
 
-   
-    int Dict_size; 
+    int Dict_size;
     ArrayList<ArrayList<pair>> Dictionnary;
 
     Dictionnary(int size) {
         Dictionnary = new ArrayList<ArrayList<pair>>(size);
+        for (int i = 0; i < size; i++) {
+            Dictionnary.add(new ArrayList<pair>());
+        }   
         this.Dict_size = size;
 
     }
@@ -67,15 +69,15 @@ public class Dictionnary {
 
     }
 
-    void display_dictionary(){
-        for(int index = 0; index < Dictionnary.size(); index++){
-            if(Dictionnary.get(index) != null){
-                for(int j = 0; j < Dictionnary.get(index).size(); j++){
+    void display_dictionary() {
+        for (int index = 0; index < Dictionnary.size(); index++) {
+            if (Dictionnary.get(index) != null) {
+                for (int j = 0; j < Dictionnary.get(index).size(); j++) {
                     pair p = Dictionnary.get(index).get(j);
                     System.out.println("Key: " + p.key + ", Value: " + p.value);
                 }
             }
-            
+
         }
     }
 

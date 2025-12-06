@@ -21,6 +21,10 @@ public class Dual_ascent {
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()){
                 String line = scanner.nextLine();
+                  if (line.isEmpty()) {
+                    break; // Stop on blank line
+                }
+                System.out.println("line: " + line);
                 String[] parts = line.split(":");
                 String key = parts[0];
                 System.out.println("key: " + key);
