@@ -9,7 +9,7 @@ public class Dictionnary {
         Dictionnary = new ArrayList<ArrayList<pair>>(size);
         for (int i = 0; i < size; i++) {
             Dictionnary.add(new ArrayList<pair>());
-        }   
+        }
         this.Dict_size = size;
 
     }

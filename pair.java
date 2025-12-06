@@ -6,5 +6,5 @@ public class pair {
         this.key = key;
         this.value = value;
     }
-    
+
 }
