@@ -16,9 +16,7 @@ public class Dictionnary {
 
     int hash(String key) {
         int hashword = key.hashCode();
-        System.out.println("Hash code for key \"" + key + "\": " + hashword);
         int index = hashword % this.Dict_size;
-        System.out.println("Index for key \"" + key + "\": " + index);
         return index;
     }
 
